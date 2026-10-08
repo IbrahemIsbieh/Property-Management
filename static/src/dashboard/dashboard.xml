@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="property_management.Dashboard">
+        <div class="property-management-dashboard">
+            <div class="dashboard-header">
+                <h1>Property Management</h1>
+                <p>Overview &amp; Control Center</p>
+            </div>
+            <div class="dashboard-sections">
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <div>
+                            <h2>Real Estate</h2>
+                            <span>Property Management</span>
+                        </div>
+                    </div>
+                    <div class="dashboard-metrics">
+                        <div class="dashboard-metric">
+                            <span>Properties</span>
+                            <strong><t t-esc="state.propertyCount"/></strong>
+                        </div>
+                        <div class="dashboard-metric">
+                            <span>Sold</span>
+                            <strong><t t-esc="state.soldCount"/></strong>
+                        </div>
+                    </div>
+                    <button type="button" class="dashboard-button" t-on-click="openRealEstate">
+                        Open Real Estate
+                    </button>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <div>
+                            <h2>Maintenance</h2>
+                            <span>Home Maintenance</span>
+                        </div>
+                    </div>
+                    <div class="dashboard-metrics">
+                        <div class="dashboard-metric">
+                            <span>Properties</span>
+                            <strong><t t-esc="state.maintenancePropertyCount"/></strong>
+                        </div>
+                        <div class="dashboard-metric">
+                            <span>Requests</span>
+                            <strong><t t-esc="state.requestCount"/></strong>
+                        </div>
+                    </div>
+                    <button type="button" class="dashboard-button" t-on-click="openMaintenance">
+                        Open Maintenance
+                    </button>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

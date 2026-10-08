@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="property_management_user_group" model="res.groups">
+        <field name="name">Property Management User</field>
+        <field name="implied_ids" eval="[(4, ref('app_onee.property_user_group')),(4, ref('home_maintenance.group_home_user'))]"/>
+    </record>
+
+    <record id="property_management_manager_group" model="res.groups">
+        <field name="name">Property Management Manager</field>
+        <field name="implied_ids" eval="[(4, ref('property_management_user_group')),(4, ref('app_onee.property_manager_group')),(4, ref('home_maintenance.group_home_manager'))]"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,120 @@
+.property-management-dashboard {
+    padding: 32px;
+    min-height: 100%;
+    background-color: #f5f6f8;
+}
+
+
+/* Header */
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.dashboard-header p {
+    margin-top: 6px;
+    margin-bottom: 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+
+/* Dashboard Sections */
+
+.dashboard-sections {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+/* Card */
+
+.dashboard-card {
+    padding: 26px;
+    background-color: white;
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Card Header */
+
+.dashboard-card-header {
+    margin-bottom: 24px;
+}
+
+.dashboard-card-header h2 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.dashboard-card-header span {
+    display: block;
+    margin-top: 5px;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+
+/* Metrics */
+
+.dashboard-metrics {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 28px;
+}
+
+.dashboard-metric {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-metric span {
+    margin-bottom: 5px;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.dashboard-metric strong {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+/* Button */
+
+.dashboard-button {
+    width: 100%;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #714b67;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dashboard-button:hover {
+    opacity: 0.9;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .dashboard-sections {
+        grid-template-columns: 1fr;
+    }
+
+}
+

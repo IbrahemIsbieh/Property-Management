@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="app_onee.real_estate_root_menu" model="ir.ui.menu">
+        <field name="parent_id" ref="property_management.property_management_menu_root"/>
+    </record>
+
+    <record id="home_maintenance.menu_home_maintenance_root" model="ir.ui.menu">
+        <field name="parent_id" ref="property_management.property_management_menu_root"/>
+    </record>
+</odoo>
